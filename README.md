@@ -1,0 +1,1 @@
+salam bu sayt Emrah terefinden hazirlanmisdir

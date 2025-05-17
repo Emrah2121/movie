@@ -1,0 +1,111 @@
+.pageWrapper {
+  background-color: #0d1117;
+  min-height: 100vh;
+  padding: 30px 20px;
+  color: #f1f1f1;
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+}
+
+.headerSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+
+.homeButton {
+  font-size: 28px;
+  color: #00ffc8;
+  padding: 10px 12px;
+  
+ 
+  box-shadow: 0 0 15px #00ffc8;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeButton:hover {
+  background: #00ffc8;
+  color: #04281b;
+  box-shadow: 0 0 25px #00ffc8;
+  transform: scale(1.15);
+}
+
+.listTitle {
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #00e5ff;
+  text-shadow:
+    0 0 5px #00e5ff,
+    0 0 15px #00b8d4,
+    0 0 25px #00acc1;
+}
+
+.moviesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 24px;
+  padding: 0 10px;
+}
+
+.movieCard {
+  background: #161b22;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movieCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 255, 200, 0.3);
+}
+
+.movieName {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 12px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.posterImage {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 255, 255, 0.15);
+  margin-bottom: 12px;
+}
+
+.openImdbBtn {
+  background-color: #00ffc8;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #04281b;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.openImdbBtn:hover {
+  background-color: #00e5ac;
+  transform: scale(1.05);
+}
+
+.notFoundMessage {
+  text-align: center;
+  color: #ff4d4d;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 100px;
+}
